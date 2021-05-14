@@ -464,9 +464,10 @@ h6 {
     box-shadow: 0px 0px 4px 4px #d5d2d2;
     height: 100vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .serviceCard {
         height: fit-content;
+        width: fit-content;
     }
 }
 
@@ -1874,4 +1875,9 @@ section {
     font-size: 10px;
     font-weight: 400;
     opacity: 0.8;
+}
+
+.note {
+    opacity: 0.5;
+    font-size: 12px;
 }
