@@ -1881,3 +1881,8 @@ section {
     opacity: 0.5;
     font-size: 12px;
 }
+
+.terms {
+    font-size: 10px;
+    opacity: 0.8;
+}
