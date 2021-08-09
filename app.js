@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res, next) => {
-    return res.render('home');
+    return res.render('./views/home');
 });
 app.post('/', (req, res, next) => {
     let bodyText =
