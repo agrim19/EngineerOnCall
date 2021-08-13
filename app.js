@@ -8,11 +8,11 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: true}));
 
-// app.get("*", (req, res, next) => {
-//     if (req.headers["x-forwarded-proto"] != "https")
-//         res.redirect("https://engineeroncall.in" + req.url);
-//     else next();
-// });
+app.get("*", (req, res, next) => {
+    if (req.headers["x-forwarded-proto"] != "https")
+        res.redirect("https://engineeroncall.in" + req.url);
+    else next();
+});
 
 app.get("/", (req, res, next) => {
     return res.render("home");
